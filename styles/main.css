@@ -1,4 +1,71 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+
 /* Box model
+largura, altura espaçamentos, preencimento,
+Posicionamento,alinhamento bordas, cor Fundo, 
+maneira vista pelo html (display)
+ */
+
+
+body {
+    background-color: #f0f0f5;
+}
+
+
+/* Excluindo o sublinhado da tag <a>*/
+a {
+    text-decoration: none;
+}
+
+#page-home{
+    height: 100vh;
+
+    background: url('../icones/home-background.svg') no-repeat;
+    background-position: 35vw bottom;
+}
+
+#page-home .content{
+        width: 90%;
+        max-width:1100px;
+        margin: 0 auto;
+        
+}
+
+/* display: flex; eixo x | espaço entre o eixo|-> space-between */
+
+#page-home header {
+    margin-top: 48px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Alinhando icone um ao lado do outro <a> link */
+
+#page-home header a {
+    display: flex;
+    color: #322153;
+    font-weight: 700;
+
+}
+
+
+/*Determinar sempre altura e largura para exibir imagem
+*  margin-right: 16px;
+*/
+
+#page-home header a span{
+    display: flex;
+    background: url(/icones/log-in.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 1vh;
+}
+#page-home main{
+
+}
+
