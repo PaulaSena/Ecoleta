@@ -38,7 +38,7 @@ a {
 
 #page-home header {
     margin-top: 48px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,7 +60,7 @@ a {
 
 #page-home header a span{
     display: flex;
-    background: url(/icones/log-in.svg);
+    background: url('../icones/log-in.svg') no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 1vh;
