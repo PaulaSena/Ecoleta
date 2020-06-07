@@ -4,12 +4,21 @@
 */
 :root {
     --title-color:violet;
+    --primary-color:rgb(64, 243, 136);
+}
+
+/* zerando seletores */
+
+* {
+    margin: 0;
+    padding: 0;
+
+
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
-
 
 /* Box model
 largura, altura espaçamentos, preencimento,
@@ -20,6 +29,7 @@ maneira vista pelo html (display)
 
 body {
     background-color: #f0f0f5;
+    -webkit-font-smoothing:antialiased;
 }
 
 
@@ -27,8 +37,9 @@ body {
 a {
     text-decoration: none;
 }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Amatic', sans-serif;
+    font-family: Ubuntu, sans-serif;
     color: var(--title-color);
 }
 
@@ -40,14 +51,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*  display: flex; flex-direction: column; um abaico do outro*/
+/*  display: flex; flex-direction: column; um abaixo do outro*/
 #page-home .content{
         width: 90%;
+        height: 100%;
         max-width:1100px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        
+                
 }
 
 /* display: flex; eixo x | espaço entre o eixo|-> space-between */
@@ -62,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Alinhando icone um ao lado do outro <a> link 
 ** color:#322153; font-weight:700;
 */
+
 #page-home header a {
     display: flex;
     color: var(--title-color);
@@ -77,18 +90,145 @@ h1, h2, h3, h4, h5, h6 {
 #page-home header a span{
     display: flex;
     background: url('../icones/log-in.svg') no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-right: 1vh;
 }
 
 #page-home main{
     max-width: 560px;
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 
 }
-/*chamando variavel*/
+/*chamando variavel*
+* color: var(--title-color);
+*/
 #page-home main h2{
     font-size: 45px;
-    color: var(--title-color);
+
+}
+/*Altura da linha*/
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 20px;
+}
+/*Botão de pesquisa*/
+#page-home main a{
+    width: 100%;
+    height: 72px;
+    max-width: 360px;
+    margin-top: 20px;
+    background: var(--primary-color);
+    border-radius: 34px 5px;
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+    color: white;
+    font-weight: bold;
+
+    }
+
+    /*Efeitos link mause*/
+#page-home main a:hover { 
+    background-color:rgb(207, 119, 248);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.408);
+   
+}
+
+
+/*********************** Teste 1 ok
+#page-home main a span {
+    margin-right: 25px;
+    width: 72px;
+    height: 72px;
+    border-radius: 34px 5px;
+    background: url(../icones/search.svg) no-repeat;
+    background-position:center ;
+
+
+}
+/*Efeitos span mause*
+#page-home main a span:hover { 
+    background-color:rgb(183, 102, 221);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.408);
+
+}
+*************************/
+
+
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    border-radius: 34px 5px;
+    background: url(../icones/search.svg) no-repeat;
+    background-color:rgba(183, 102, 221, 0.272);
+ 
+    background-position:center ;
+}
+
+/*Efeitos span mause*/
+#page-home main a span:hover { 
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.408);
+
+} 
+
+/********* Adição de  img com Pesseudo Elemento*
+
+#page-home main a span {
+
+    width: 72px;
+    height: 72px;
+
+    border-top-left-radius: 34px;
+    border-boton-left-radius: 5px;
+
+    background-color:rgba(183, 102, 221, 0.272);
+
+    display:flex;
+    aling-itens:center;
+    justify-content:center;
+}
+
+
+#page-home main a span::after {
+    content: "";
+    background-image: url('../icones/search.svg');
+
+    width: 28px;
+    height: 20px;
+}
+
+*****************************/
+#page-home main a strong{
+    flex:1;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width:900px) {
+    
+    #page-home {
+    
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main{
+        align-items: center;
+    }
 }
