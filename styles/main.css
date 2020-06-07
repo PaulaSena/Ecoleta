@@ -1,3 +1,11 @@
+
+/* criando variavel de cor*
+** color:#322153;
+*/
+:root {
+    --title-color:violet;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,6 +27,10 @@ body {
 a {
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic', sans-serif;
+    color: var(--title-color);
+}
 
 #page-home{
     height: 100vh;
@@ -27,15 +39,18 @@ a {
     background-position: 35vw bottom;
 }
 
+
+/*  display: flex; flex-direction: column; um abaico do outro*/
 #page-home .content{
         width: 90%;
         max-width:1100px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
         
 }
 
 /* display: flex; eixo x | espaço entre o eixo|-> space-between */
-
 #page-home header {
     margin-top: 48px;
 
@@ -44,20 +59,21 @@ a {
     justify-content: space-between;
 }
 
-/* Alinhando icone um ao lado do outro <a> link */
-
+/* Alinhando icone um ao lado do outro <a> link 
+** color:#322153; font-weight:700;
+*/
 #page-home header a {
     display: flex;
-    color: #322153;
+    color: var(--title-color);
     font-weight: 700;
+   
 
 }
 
 
-/*Determinar sempre altura e largura para exibir imagem
-*  margin-right: 16px;
+/*Determinar sempre altura height e largura width para exibir imagem
+**  margin-right: 16px;
 */
-
 #page-home header a span{
     display: flex;
     background: url('../icones/log-in.svg') no-repeat;
@@ -65,7 +81,14 @@ a {
     height: 20px;
     margin-right: 1vh;
 }
+
 #page-home main{
+    max-width: 560px;
+    display: flex;
 
 }
-
+/*chamando variavel*/
+#page-home main h2{
+    font-size: 45px;
+    color: var(--title-color);
+}
