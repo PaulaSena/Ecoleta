@@ -7,10 +7,14 @@
     
         background-position-x: 70vw;
     }
+
     #page-home .content {
         align-items: center;
         text-align: center;
-    }
+
+        width: 80%;
+        height: 65%; 
+        }
 
     #page-home header a {
         position: absolute;
