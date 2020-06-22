@@ -1,0 +1,95 @@
+
+/* Quahdo maior que 900 exiba a imagem no*/
+
+@media (max-width:900px) {
+    
+    #page-home {
+    
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition-duration: 500ms;
+    }
+        #page-home header a main h2 {
+            font-size: 25px;
+        }    
+    }
+
+    /* inserindo gradiente =) e uma propriedade do transition 
+transform é mais suave que o transition
+*/
+
+
+    #page-home header a:hover{
+        width: 350px;
+        height: 70px;
+
+        font-size: 17px;
+        color: white;
+        
+        background-image: linear-gradient(to bottom right,violet, var(--primary-color));
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.408);
+
+        padding: 25px;
+        border-radius: 25px 25px;
+
+        left: 50%;
+        align-items: center;
+       
+               
+    }
+    #page-home main {
+        align-items: center;
+        }
+
+        
+   
+/*
+        #page-home main a:hover{
+
+            transition-duration: 500ms;
+            width: 900px;   
+    } */
+/* Fazer quando a tela tiver alta ou larga */
+
+@media (max-width:1700px) {
+    
+    #page-home {
+    
+        background-position-x: 40vw;
+     }
+    }
+ @media(max-height:800px) {
+
+    #page-home {
+        background-position-y: 200px;
+    }
+
+    }
+ 
+/*
+@media (max-width:360px){
+     #page-home header main h2 {
+        font-size: 15px;
+    }
+    #page-home header main h2 p {
+        font-size: 25px;
+    }    
+
+}
+@media (max-height:600){
+    #page-home header main h2 p a{
+    margin-top: 600px;    
+    }    
+
+    } 
+*/

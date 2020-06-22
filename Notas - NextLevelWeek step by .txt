@@ -1,0 +1,59 @@
+
+
+❤❤❤ PASSO A PASSO DO PROJETO ECOLETA ❤❤❤
+
+Atalhos: 
+
+* F12 - Ferramenta Desenvolvedor. control + r
+* ! - Corpo de pagina.
+*Ctrl+/ - Adicionar comentario   /* comentario */
+
+Ferramentas:
+
+* Vs code - Launchebase Theme
+* Notion.so - Notas
+* Vs code Live server - Atualização do navegador 
+
+
+Tags / novas
+
+Fonts .google.com
+*  :root --primary-color:rgb(64, 243, 136);
+   background-color: var(--primary-color);
+
+*  inserindo gradiente com a variavel de cor primaria |  background-image: linear-gradient(to bottom right,violet, var(--primary-color));
+
+
+1)  Step One ❤
+Criar pasta nlw
+-Criar arquivo index.html |
+   - Campo de Cadastro | Formulario 
+   - Campo de pesquisa | 
+-Criar arquivo create-point.html
+   - Campo Voltar para Home 
+   - Campo pesquisa 
+   - Fomulario de cadastro
+  
+2)  Step Two ❤
+Criar pasta icones
+-imagens
+
+3)  Step Three ❤
+Criar pasta styles
+  - Criar arquivo home.css | Configuração da primeira página 
+  - Criar arquivo main.css | Configuração padrão para todas as paginas.
+  - Criar arquivo responsive.css | Deixa o site Responsivel para outros dispositivos e celulares.
+
+❤❤❤ Adicionado efeito gradiente ao passar o mause no botão Pesquisar pontos de coleta. | responsive.css
+
+
+❤❤❤ Adicionado efeito gradiente ao reduzir a tela no campo Cadastre ponto de coleta, botão com efeito gradiente
+ao passar o mause.| responsive.css
+
+
+3)  Step Four ❤
+
+
+  -Criar arquivo create-point.css | Configuração da segunda página. 
+
+❤❤❤ Edição no botão Cadastrar pontos de coleta, expandindo -se  com efeito gradiente ao passar o mause no botão.

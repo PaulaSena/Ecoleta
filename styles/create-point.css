@@ -1,0 +1,148 @@
+/* */
+
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-point header {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* display: flex; deixar um ao lado do outro*/
+#page-create-point header a {
+    color:var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#page-create-point header a span{
+
+    width: 25px;
+    height: 25px;
+    background: url(../icones/arrow-left.svg) no-repeat;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+/* padding preeenchimento*
+* box sizing - limite de borda
+*/
+
+form {
+    margin-top: 80px;
+    background-color: white;
+    padding: 64px;
+    border-radius: 8px;
+    max-width: 730px;
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form  fieldset{
+    margin-top: 64px;
+    border: 0;
+}
+form legend{
+    margin-bottom: 40px;
+}
+form legend h2{
+    font-size: 24px;
+}
+
+/* Chamando todos .field para ficar um ao lado do outro com flex:1 preenchimento automatico e column*/
+
+form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+/* não esquecer do  PONTO -> .field */
+
+form .field-group{
+display: flex;
+
+}
+
+/* preenchimento   interno autura  16px e laterais 24px
+**  padding: 16px 24px;
+** outiline :none;  retira linha de indicação do campo selecionado
+
+*/ 
+form input, form select{
+    background-color: #f0f0f5;
+    border: 0; 
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+/* Para utilizar o Select em outros navegadores sem utilizar seta dos options */
+
+form select{
+    -webkit-appearance:none;
+    -moz-apperance:none;
+    appearance: none;
+
+}
+/*
+form option{
+    background-color: whitesmoke;
+    border: 0;
+    padding: 16px;
+}
+*/
+
+form label{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+
+form button{
+    
+    width: 275px;
+    height: 56px;
+    background-color: var(--primary-color);
+
+    border-radius: 34px 5px;
+    border:0px;
+
+    color: white;
+    font-weight: bold;
+    transition-duration: 500ms;
+    -webkit-transform-property:height;
+
+}
+/* inserindo gradiente =) e uma propriedade do transition 
+transform é mais suave que o transition
+*/
+form button:hover{
+    padding: 5px;
+    font-size: 17px;
+    width: 300px;
+ 
+    height: 70px;
+    background-image: linear-gradient(to bottom right,violet, var(--primary-color));
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.408);
+
+}
