@@ -22,7 +22,7 @@
         #page-home header a main h2 {
             font-size: 25px;
         }    
-    }
+    
 
     /* inserindo gradiente =) e uma propriedade do transition 
 transform é mais suave que o transition
@@ -50,7 +50,7 @@ transform é mais suave que o transition
     #page-home main {
         align-items: center;
         }
-
+    }
         
    
 /*
@@ -68,7 +68,7 @@ transform é mais suave que o transition
         background-position-x: 40vw;
      }
     }
- @media(max-height:800px) {
+ @media(max-height:900px) {
 
     #page-home {
         background-position-y: 200px;
