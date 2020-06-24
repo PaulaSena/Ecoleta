@@ -27,9 +27,11 @@ Fonts .google.com
 1)  Step One ❤
 Criar pasta nlw
 -Criar arquivo index.html |
-   - Campo de Cadastro | Formulario 
-   - Campo de pesquisa | 
+   - Campo de Cadastro 
+   - Campo de pesquisa 
+ 
 -Criar arquivo create-point.html
+
    - Campo Voltar para Home 
    - Campo pesquisa 
    - Fomulario de cadastro
@@ -52,8 +54,7 @@ ao passar o mause.| responsive.css
 
 
 3)  Step Four ❤
+  - Criar arquivo create-point.css | Configuração da segunda página Formulário.
 
-
-  -Criar arquivo create-point.css | Configuração da segunda página. 
 
 ❤❤❤ Edição no botão Cadastrar pontos de coleta, expandindo -se  com efeito gradiente ao passar o mause no botão.

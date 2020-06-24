@@ -1,0 +1,197 @@
+//document.write("hello")
+
+//Objeto possuem propriedades e funcionalidades
+
+const pessoa ={
+  altura:"1,63",
+  idade:"28",
+  solteira:false  
+}
+
+document.write(pessoa)
+
+[object Object]
+
+****************************
+
+
+const pessoa ={
+  altura:"1,63",
+  idade:"28",
+  solteira:false  
+}
+
+document.write(pessoa.altura)
+
+1,63
+
+****************************
+
+
+
+const pessoa ={
+  altura:"1,63",
+  idade:"28",
+  solteiro:false,
+  correr(){
+   // document.write("run forest")
+    return "run Forest"
+  }
+}
+
+document.write(pessoa.correr())
+
+*****************************
+
+
+
+// Array - Vetores
+
+const colecaoDeBolinhas = ["blue", "green"]
+
+document.write(colecaoDeBolinhas)
+
+
+blue,green
+
+*****************
+
+const colecaoDeBolinhas = ["blue", "green", 1, {}]
+
+document.write(colecaoDeBolinhas)
+
+blue,green,1,[object Object]
+
+
+**************************
+const colecaoDeBolinhas = ["blue", "green", 1, {name:"Ana Paula"}]
+
+document.write(colecaoDeBolinhas[2])
+
+
+1
+**********************
+
+
+
+const colecaoDeBolinhas = ["blue", "green", 1, {name:"Ana Paula"}]
+
+document.write(colecaoDeBolinhas[3])
+
+
+[object Object]
+
+
+************************
+
+// Array - Vetores  | Coleção de dados
+
+const colecaoDeBolinhas = ["blue", "green", 1, {name:"Ana Paula"}]
+
+document.write(colecaoDeBolinhas[3].name)
+
+Ana Paula
+
+***********************
+
+
+// Funcionalidades Atalhos reuso de codgo.
+
+function sayMayName(){
+  document.write("Ana Paula")
+}
+
+sayMayName()
+
+Ana Paula
+
+*****************
+
+// Funcionalidades Atalhos reuso de codgo.
+
+function sayMayName(name){
+  document.write(name)
+}
+
+sayMayName("Ana Paula ")
+sayMayName("Theo ")
+sayMayName("Pedro ")
+
+Ana Paula Theo Pedro
+
+******************
+
+
+//Loop Repetiçoes
+
+for (i = 0; i < 10; i++){
+  document.write(i)
+}
+
+0123456789
+
+******************
+
+//Loop Repetiçoes
+
+for (i = 0; i < 10; i++){
+  document.write("<p> Ola </p>")
+}
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+Ola
+
+**************
+
+// interpolação
+
+for(i=0; i < 10; i++){
+  document.write(`<p>${i}</p>`)
+}
+
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+**************
+
+console f12
+Selecionar os seletores
+
+document.querySelector("form")
+form
+

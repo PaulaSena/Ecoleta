@@ -1,0 +1,8 @@
+Populando pagina de Cadastro
+
+document.querySelectorAll("form input")
+NodeList(3) [input, input, input]
+
+no google digitar
+ 
+ibge serviços api
