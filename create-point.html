@@ -22,7 +22,7 @@
 
      <div id="page-create-point">
 
-        
+
 
             <header>
                 <img src="./icones/logo.svg" alt="Logomarca">              
@@ -41,29 +41,38 @@
                         <legend><h2>Dados de entidade</h2> </legend>
 
                         <div class="field">
-                            <label for="name"> Nome da entidade</label>
+                         <label for="name"> Nome da entidade</label>
                             <input type="text" name="name">
                         </div>                     
                     
                  <div class="field-group">
                        <div class="field">
-                           <label for="address"> Endereço </label>
+                        <label for="address"> Endereço </label>
                            <input type="text" name="address">
                        </div>
                        <div class="field">
-                           <label for="address2"> Número/Complemento </label>
+                        <label for="address2"> Número/Complemento </label>
                            <input type="text" name="address2">
                     </div>
                 </div>
+                
+                <!-- ao inserir nova opção e dar valor o ouvidor de evento é execultado 
+                                            <option value="1"> opção 1 Estado</option> -->
+
                 <div class="field-group">
                     <div class="field">
-                        <label for="state"> Estado </label>
-                        <select name="uf"><option value=""> Selecione o Estado</option>
+                     <label for="state"> Estado </label>
+                        <select name="uf">
+                            <option value=""> Selecione o Estado</option>
+                         <!-- <option value="1"> opção 1 Estado</option> -->
+
                         </select>
                     </div>
+                    <!-- Esse option fica desabilitado até que os dados sejem populados-->
                     <div class="field">
-                        <label for="city"> Cidade </label>
-                        <select type="city"disabled><option value=""> Selecione a Cidade</option>
+                     <label for="city"> Cidade </label>
+                        <select type="city"disabled>
+                            <option value=""> Selecione a Cidade</option>
                         </select>
                     </div>
                   
@@ -88,9 +97,6 @@
             
     
      </div>
-
-     <script src="/scripts/create-point.js"></script>
- 
-
+     <script src="./scripts/create-point.js"></script>
 </body>
 </html>

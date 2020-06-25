@@ -6,3 +6,78 @@ NodeList(3) [input, input, input]
 no google digitar
  
 ibge serviços api
+
+função fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados
+")
+
+Prommisse 
+Vou ir e vontar com ou sem dados
+.then(function(res) {}) 
+
+função fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados
+").então(function(anonima) {console.log(anonima)})
+
+
+Essa promessa vai ao local e tras ou não algo.
+então. com uma funçao trarei o que esta nessa pagina 
+e exibirei na tela com o comando consolog e o nome da função nomeada 
+
+promessa  fetch("https://vai ao local e tras ou não algo")
+então.  then(function(res){ console.log(res)})
+
+
+*******
+
+Argumento 
+fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+.then(function(res){ console.log(res)})
+
+de enter ||  retornou :
+
+Promise {<pending>}
+VM207:1 Response {type: "cors", url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados", redirected: false, status: 200, ok: true, …}
+
+ok agora presisamos trasformar esses dados em Json para saber os dados q poderei utilizar.
+
+TRANSFORMANDO RESPOSTA EM JSON
+
+fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+.then(function (res){console.log(res.json)})
+
+Retorn outra promessa
+
+fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+.then(function (res){return res.json() })
+.then(function(data){console.log(data)})
+
+
+Na pagina create-point vou buscar o campo a ser populado.
+
+
+Como chamou uma promessa entao retorne os dados da promeça e exiba em cosole.log.
+
+erol font
+
+()=>{
+      
+  })
+*******************
+
+ document
+ // Essa query utiliza o campo select em busca um seletor especifico de nome UF 
+ .querySelector("select [name=uf]")
+ // Ouvidor de eventos mudança Ex: Click, carregamento de pagina
+  .addEventListener("chaches", () => {
+      console.log("mudei")
+
+  })
+
+*******************
+
+
+
+
+
+
+
+
