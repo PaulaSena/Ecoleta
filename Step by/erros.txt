@@ -1,0 +1,12 @@
+Ocorreu erro de script ao tentar visualizar resposta no console do navegador.
+
+create-point.html:100 GET file:///C:/scripts/ net::ERR_FILE_NOT_FOUND
+
+ápos recriar o arquivo 
+
+Consegui corrigi-lo deixando o arquivo fora da pasta.
+
+porem ao  tentar novamente Deixar o arquivo na pasta
+percebi que havia esquecido de adicionar o ./ para buscar de outra pasta o arquivo js.
+
+     <script src="./scripts/create-point.js"></script>

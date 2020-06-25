@@ -10,19 +10,19 @@ ibge serviços api
 função fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados
 ")
 
-Prommisse 
-Vou ir e vontar com ou sem dados
+Promisse 
+Vou ir e voltar com ou sem dados
 .then(function(res) {}) 
 
 função fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados
-").então(function(anonima) {console.log(anonima)})
+").então(function(anônima) {console.log(anônima)})
 
 
-Essa promessa vai ao local e tras ou não algo.
-então. com uma funçao trarei o que esta nessa pagina 
+Essa promessa vai ao local e trás ou não algo.
+então. com uma função trarei o que esta nessa pagina 
 e exibirei na tela com o comando consolog e o nome da função nomeada 
 
-promessa  fetch("https://vai ao local e tras ou não algo")
+promessa  fetch("https://vai ao local e trás ou não algo")
 então.  then(function(res){ console.log(res)})
 
 
@@ -34,10 +34,10 @@ fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
 
 de enter ||  retornou :
 
-Promise {<pending>}
-VM207:1 Response {type: "cors", url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados", redirected: false, status: 200, ok: true, …}
+Promisse {<pending>}
+VM207:1 Response {type: "cors", url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados", redirected: false, status: 200, ok: true, …}
 
-ok agora presisamos trasformar esses dados em Json para saber os dados q poderei utilizar.
+ok agora precisamos transformar esses dados em Json para saber os dados q poderei utilizar.
 
 TRANSFORMANDO RESPOSTA EM JSON
 
@@ -54,7 +54,7 @@ fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
 Na pagina create-point vou buscar o campo a ser populado.
 
 
-Como chamou uma promessa entao retorne os dados da promeça e exiba em cosole.log.
+Como chamou uma promessa entao retorne os dados da promessa e exiba em cosole.log.
 
 erol font
 
@@ -74,7 +74,53 @@ erol font
 
 *******************
 
+********Passo 1********* 
 
+Popular pagina de cadastro..
+
+           // 2 teste no navegador com edição do option no create-point | Console
+
+    
+    function populateUFs(){
+        const ufSelect = document.querySelector("select[name=uf]") 
+
+        fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+        .then( res => res.json())
+        .then( states => {
+
+          for( const state of states){
+
+            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+          }
+
+  
+        })
+      }
+
+      populateUFs() 
+
+       // 1 teste no navegador com edição do option no create-point | Console
+
+    document
+      .querySelector("select[name=uf]")
+      .addEventListener("change", () => {
+          console.log("Mudei")
+        } )
+
+
+
+
+///  Sempre que o comando document teste 1 realizar a mudança do seletor uf ira buscar na função 
+///  populateUF() o id e o nome na api para polular automaticamente.
+
+
+
+******** Passo 2 ********* 
+
+https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios
+
+
+Criação do For para popular automaticamente 
 
 
 
