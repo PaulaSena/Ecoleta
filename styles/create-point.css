@@ -144,5 +144,46 @@ form button:hover{
     height: 70px;
     background-image: linear-gradient(to bottom right,violet, var(--primary-color));
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.408);
+}
 
+.itens-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+/* gap espaço entre itens
+  retigrar ponto da linsta list-style: none; */
+.itens-grid li{
+    background-color: #f0f0f5;
+    list-style: none;
+    border:2px solid #f0f0f5;
+    height: 180px;
+    border-radius: 9px;
+    padding: 32px 24px 16px;
+    display: flex;
+    Flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /*Mão*/
+    cursor: pointer;
+}
+.itens-grid li:hover{
+    background-image: linear-gradient(to bottom left,violet, var(--primary-color));
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.408);
+}
+.itens-grid li span{
+    flex: 1;
+    margin-top: 12px;
+    display: flex;
+
+}
+.itens-grid li.selected{
+    background-image: linear-gradient(to bottom left,violet, var(--primary-color));
+}
+
+.itens-grid li img,
+.itens-grid li span{
+    pointer-events: none;
 }

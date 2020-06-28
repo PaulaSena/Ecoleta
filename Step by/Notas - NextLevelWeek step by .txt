@@ -7,6 +7,7 @@ Atalhos:
 * F12 - Ferramenta Desenvolvedor. control + r
 * ! - Corpo de pagina.
 *Ctrl+/ - Adicionar comentario   /* comentario */
+Ctrl + D para rescrever com referêcia
 
 Ferramentas:
 
