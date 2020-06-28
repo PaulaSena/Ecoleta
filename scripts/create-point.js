@@ -1,13 +1,13 @@
     
     
-    function populateUFs(){
+    function populateUFs() {
         const ufSelect = document.querySelector("select[name=uf]") 
 
         fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
         .then( res => res.json())
         .then( states => {
 
-          for( const state of states){
+          for( const state of states ){
 
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
           }
@@ -18,17 +18,62 @@
 
       populateUFs() 
 
-       // 1 teste no navegador com edição do option no create-point | Console
 
+      function getCities(event) {
+        const citySelect = document.querySelector("select[name=city]")
+        const stateInput = document.querySelector("input[name=state]")
+
+
+
+      console.log(event.target.value)
+
+  //  const url =`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
+
+/*
+       fetch(url)
+       .then( res => res.json())
+       .then( cities => {
+
+         for( const city of cities ){
+           citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+         }
+*/
+
+       
+
+      }
+
+      
+document
+    .querySelector("select[name=uf]")
+    .addEventListener("change", getCities)  
+
+
+
+// Execute a function populateUFs(){
+// carregado o no console f12 o evento.target e exibido o campo Utilizado.
+// carregado o no console f12 evento.target  carregado tambem o valor ex: piaui 22
+// de    console.log(event.target.value) para       const ufValue = event.target.value
+//                                           <!-- target abre outra pagina Ex: target="blanck" abrir pagina em branco> --> 
+
+
+    
+ //     console.log("event.target")
+
+// A Função getCities() ira executar pegar do document quando mudar o Change o objeto getCities para popular dentro do select
+
+
+// 1 teste no navegador com edição do option no create-point | Console
+/*
     document
       .querySelector("select[name=uf]")
       .addEventListener("change", () => {
           console.log("Mudei")
         } )
-
+*/
 
 //   .addEventListener("chaches", () => {  Ouvidor de eventos mudança Ex: Click, carregamento de pagina
- //   .querySelector("select [name=uf]")  Essa query utiliza o campo select em busca um seletor especifico de nome UF 
+//   .querySelector("select [name=uf]")  Essa query utiliza o campo select em busca um seletor especifico de nome UF 
 
 
          
