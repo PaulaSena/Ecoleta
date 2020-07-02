@@ -15,4 +15,4 @@ Pagina inicial:
 - Campo de Cadastro 
 - Campo de Pesquisa
 
-![Primeira tela!](/imgportfolio/Eco1.1.png " home" [link](https://paulasena.github.io/Ecoleta/)
+![Primeira tela!(https://paulasena.github.io/Ecoleta/)](/imgportfolio/Eco1.1.png " home")
