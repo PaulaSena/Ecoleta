@@ -1,4 +1,6 @@
 # Ecoleta
+![Link](https://paulasena.github.io/Ecoleta/)
+
 Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambiente o sistema busca os pontos para coleta de resíduos.  
 
 ## Neste projeto foi realizado o desenvolvimento de um marketplace referente a semana do meio ambiente.
@@ -15,4 +17,4 @@ Pagina inicial:
 - Campo de Cadastro 
 - Campo de Pesquisa
 
-![Primeira tela!(https://paulasena.github.io/Ecoleta/)](/imgportfolio/Eco1.1.png " home")
+![Primeira tela](/imgportfolio/Eco1.1.png " home")
