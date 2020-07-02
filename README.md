@@ -11,13 +11,8 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
 
 ## Na pagina principal Home:
 
-Pagina inicial: 
-
-![alt text]("https://github.com/PaulaSena/Ecoleta/blob/master/imgportfolio/Eco1.1.png?raw=true" alt="Eco1.1.png")
-
-
+Pagina inicial:
 
 img3
-![alt text]("https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco1.1.png")
 
-![Primeira tela!]( blob/master/imgportfolio/Eco1.1.png " home")
+![Primeira tela!](/imgportfolio/Eco1.1.png " home")
