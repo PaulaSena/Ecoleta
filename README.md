@@ -12,7 +12,7 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
 ## Na pagina principal Home:
 
 Pagina inicial:
+- Campo de Cadastro 
+- Campo de Pesquisa
 
-img3
-
-![Primeira tela!](/imgportfolio/Eco1.1.png " home")
+![Primeira tela!](/imgportfolio/Eco1.1.png " home" paulasena.github.io/ecoleta/)
