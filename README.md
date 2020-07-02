@@ -13,7 +13,7 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
 ## Na pagina principal Home:
 
 Pagina inicial: 
-![Link https://paulasena.github.io/Ecoleta/ ]("https://paulasena.github.io/Ecoleta/")
+![https://paulasena.github.io/Ecoleta/]
 
 - Campo de Cadastro 
 - Campo de Pesquisa
