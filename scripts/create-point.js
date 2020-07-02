@@ -75,6 +75,20 @@ document
      console.log(event.target)
    }
 
+
+
+// itens de coleta all li
+
+const itensToCollect = document.querySelectorAll(".itens-grid li")
+for (const item of itensToCollect) {
+    item.addEventListener("click",handleselectedItem)
+}
+
+function handleselectedItem (event){    
+console.log(event.target)
+}
+
+
 // Execute a function populateUFs(){
 // carregado o no console f12 o evento.target e exibido o campo Utilizado.
 // carregado o no console f12 evento.target  carregado tambem o valor ex: piaui 22
