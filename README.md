@@ -19,3 +19,10 @@ Pagina inicial:[https://paulasena.github.io/Ecoleta/]
 - Campo de Pesquisa
 
 ![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco1.1.png "Home")
+
+
+![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.0.png "Home")
+
+
+![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.1.png "Home")
+
