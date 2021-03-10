@@ -15,10 +15,13 @@
 
       populateUFs() 
 
+function getCities(event){
+
+}
+
 
       
 document
     .querySelector("select[name=uf]")
-    .addEventListener("change", ()=> {
-        console.log("Mudei")
+    .addEventListener("change",getCities)
     })
