@@ -19,4 +19,6 @@
       
 document
     .querySelector("select[name=uf]")
-    .addEventListener("change", getCities) 
+    .addEventListener("change", ()=> {
+        console.log("Mudei")
+    })
