@@ -65,12 +65,97 @@ document
      item.addEventListener("click",handleSelectedItem)
     }
 
-    const collectedItens = document.querySelector("input[name=itens]");
-    let selectedItens = [];
+    const collectedItens = document.querySelector("input[name=itens]")
+    let selectedItens = []
 
    function handleSelectedItem(event){
     // console.log(event.target)
-       const itemLi = event.target;
-       itemLi.classList.toggle("selected");
-       const itemId = eventLi.dataset.id;
+       const itemLi = event.target
+       itemLi.classList.toggle("selected")
+       const itemId = eventLi.dataset.id
    }
+
+
+// Verificar se existem itens selecionados, se sim 
+// pegar os itens selecionados
+
+const alreadySelected = selectedItens.findIndex(item => {
+    const itemFound = item == itemId // isso será true ou false
+    return itemFound
+})
+
+        // Se já estiver Selecionado
+if (alreadySelected >= 0) {
+    //tirar da seleção
+    const filredItems = selectedItems.filter(item => {
+        const itemIsDifferent = item != itemId      // false
+        return itemIsDifferent
+    })
+
+    selectedItens = filteredItens
+
+    } else {
+        // se não estiver selecionado
+        // adcionar á seleção
+        selectedItens.push(itemId)
+}
+
+        // Atualizar o campo escondido com os itens selecionados
+        collectedItens.value = selectedItens
+
+
+/**                         **** Notas ***
+ *         
+                        
+*   Execute a function populateUFs(){
+*   carregado o no console f12 o evento.target e exibido o campo Utilizado.
+*   o no console f12 evento.target  carregado tambem o valor ex: piaui 22
+*   de    console.log(event.target.value) para       const ufValue = event.target.value
+ * 
+ * 
+*/
+
+//            <!-- target abre outra pagina Ex: target="blanck" abrir pagina em branco> -->
+
+
+    
+ //     console.log("event.target")
+
+// A Função getCities() ira executar pegar do document quando mudar o Change o objeto getCities para popular dentro do select
+
+
+// 1 teste no navegador com edição do option no create-point | Console
+/*
+    document
+      .querySelector("select[name=uf]")
+      .addEventListener("change", () => {
+          console.log("Mudei")
+        } )
+*/
+
+//   .addEventListener("chaches", () => {  Ouvidor de eventos mudança Ex: Click, carregamento de pagina
+//   .querySelector("select [name=uf]")  Essa query utiliza o campo select em busca um seletor especifico de nome UF 
+
+
+         
+     // A promessa ira retornar ou não algo do site.
+     // então que a função dela seja resposta e que retorne essa resposta em json()
+     // .then - Então
+     // .catch -  Utilizado em caso de erro de busca
+     
+     // *** FUNÇÃO    
+     //         .then(function(res) {return res.json() })
+    
+     /*    Função anonima retornando um valor
+           EX: .then ( () => {} )
+               .then(data=>{
+        
+              })
+       */   
+     /* Quando a função tem menos de uma linha não precisa ultilizar return nem {}
+           EX: .then(res => res.json())     | SIMPLIFICADA
+       *///    .then(res => { res.json() }) | COMPLICADA
+
+       ///          ufSelect.innerHTML = ufSelect.innerHTML + `<option value="1">Valor</option>`
+
+
