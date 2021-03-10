@@ -20,13 +20,13 @@
       // const stateInput  esconder input para não aparecer dados na url -->
 
       function getCities(event) {
-        const citySelect = document.querySelector("[name=city]")
-        const stateInput = document.querySelector("[name=state]")
+        const citySelect = document.querySelector("select[name=city]")
+        const stateInput = document.querySelector("input[name=state]")
 
         const ufValue = event.target.value
 
         const indexOfSelectedState = event.target.selectedIndex
-        stateinput.value = event.target.options[indexOfSelectedState].text
+        stateInput.value = event.target.options[indexOfSelectedState].text
 
        //  const indexOfSelectedCity=event.target.selectedIndex
        //  citySelect.value=event.target.options[indexOfSelectedCity].text
