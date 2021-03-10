@@ -15,14 +15,16 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
 
 Pagina inicial:[https://paulasena.github.io/Ecoleta/]
 
-- Campo de Cadastro 
 - Campo de Pesquisa
 
 ![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco1.1.png "Home")
 
+- Campo de Cadastro 
 
-![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.0.png "Home")
+![Segunda tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.0.png "cadastro1")
 
 
-![Primeira tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.1.png "Home")
+![segunda tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.1.png "dados api IBGE json")
+
+-Corrigindo visualização de dados com Json na api IBGE
 
