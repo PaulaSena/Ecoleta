@@ -1,4 +1,5 @@
-        function populateUFs() {
+ 
+    function populateUFs() {
         const ufSelect = document.querySelector("select[name=uf]") 
 
         fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
@@ -6,6 +7,7 @@
         .then( states => {
 
           for( const state of states ){
+
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
           }
 
@@ -15,23 +17,16 @@
 
       populateUFs() 
 
-         // const stateInput  esconder input para não aparecer dados na url -->
-
-function getCities(event){
-
+      // const stateInput  esconder input para não aparecer dados na url -->
 
       function getCities(event) {
-        const citySelect = document.querySelector(select"[name=city]")
-        const stateInput = document.querySelector(select"[name=state]")
-        
-         const ufValue = event.target.value
+        const citySelect = document.querySelector("[name=city]")
+        const stateInput = document.querySelector("[name=state]")
 
-        const indexOfSelectedState = event.target.selectedIndex;
-        stateinput.value = event.target.options[indexOfSelectedState].text;
-}
+        const ufValue = event.target.value
 
-
-      
+        const indexOfSelectedState = event.target.selectedIndex
+        stateinput.value = event.target.options[indexOfSelectedState].text
 
        //  const indexOfSelectedCity=event.target.selectedIndex
        //  citySelect.value=event.target.options[indexOfSelectedCity].text
@@ -63,7 +58,7 @@ document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)  
 
-    // itens de coleta all li
+            // itens de coleta all li
 
   const itensToCollect = document.querySelectorAll('.itens-grid li')
    for (const item of itensToCollect){
