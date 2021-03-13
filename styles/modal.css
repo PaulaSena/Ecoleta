@@ -1,0 +1,40 @@
+
+/**/
+#modal {
+    background-color: #0E0A14fF;
+    height: 100vw;
+    width: 100vw;
+
+    position: fixed;
+    top:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+
+   }
+
+#modal .content{
+    color:azure;
+
+    width:420px;
+}
+
+#modal .header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+    #modal .header a {
+        background-image: url("../icone/x.svg");
+
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+       
+        font-size: 0.01px;
+    }

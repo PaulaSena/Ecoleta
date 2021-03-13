@@ -21,23 +21,22 @@
       // const stateInput  esconder input para não aparecer dados na url -->
 
       function getCities(event) {
-        const citySelect = document.querySelector("[name=city]")
-        const stateInput = document.querySelector("[name=state]")
+        const citySelect = document.querySelector("select[name=city]")
+        const stateInput = document.querySelector("input[name=state]")
 
         const ufValue = event.target.value
 
-        const indexOfSelectedState=event.target.selectedIndex
-        stateInput.value=event.target.options[indexOfSelectedState].text
+        const indexOfSelectedState = event.target.selectedIndex
+        stateInput.value = event.target.options[indexOfSelectedState].text
 
-
-    //    const indexOfSelectedCity=event.target.selectedIndex
-      //  citySelect.value=event.target.options[indexOfSelectedCity].text
+       //  const indexOfSelectedCity=event.target.selectedIndex
+       //  citySelect.value=event.target.options[indexOfSelectedCity].text
 
         const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`     
 
-//Limpando campo para o carregamento
-citySelect.innerHTML ="<option value>Selecione a Cidade</option>"
-citySelect.disabled=true
+                //Limpando campo cidade para o carregamento do estado
+                citySelect.innerHTML ="<option value>Selecione a Cidade</option>"
+                citySelect.disabled=true
 
 
         fetch(url)
@@ -51,49 +50,81 @@ citySelect.disabled=true
 
           citySelect.disabled=false
  
-
-
           })
 
       }
 
-
-
-      
+     
 document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)  
 
 
 
-  const itensToCollect = document.querySelectorAll('.itens-grid li')
-   for (const item of itensToCollect){
-     item.addEventListener("click",handleSelectedItem)
-   }
-
-   function handleSelectedItem(event){
-     console.log(event.target)
-   }
-
-
-
 // itens de coleta all li
-
 const itensToCollect = document.querySelectorAll(".itens-grid li")
+
 for (const item of itensToCollect) {
-    item.addEventListener("click",handleselectedItem)
+    item.addEventListener("click", handleSelectedItem)
 }
 
-function handleselectedItem (event){    
-console.log(event.target)
+//campo escondido com os itens selecionados
+
+const collectedItens = document.querySelector("input[name=itens]")
+
+let selectedItens = [1, 2, 3, 4, 5, 6]
+
+function handleSelectedItem(event) {
+
+    // console.log(event.target)    Selecionando os itens
+    const itemLi = event.target
+
+    //  toggle adicionar ou remover
+    itemLi.classList.toggle("selected")
+
+    const itemId = eventLi.dataset.id
+
+    // Verificar se existem itens selecionados, se sim 
+    // pegar os itens selecionados
+
+    const alreadySelected = selectedItens.findIndex(item => {
+        const itemFound = item == itemId;   //isso será true ou false
+        return itemFound
+    })
+
+    //Se já estiver selecionado
+    if (alreadySelected >= 0) {
+        //tirar da seleção
+        const filteredItens = selectedItens.filter(item => {
+            const itensIsDifferent = item != itemId     //false
+            return itensIsDifferent
+        })
+
+        selectedItens = filteredItens
+
+    } else {
+        //se não estiver selecionado
+        //adicionar a seleção
+        selectedItens.push(itemId)
+    }
+
+    //atualizar o campo escondido com os itens selecionados
+    collectedItens.value = selectedItens
 }
 
 
-// Execute a function populateUFs(){
-// carregado o no console f12 o evento.target e exibido o campo Utilizado.
-// carregado o no console f12 evento.target  carregado tambem o valor ex: piaui 22
-// de    console.log(event.target.value) para       const ufValue = event.target.value
-//                                           <!-- target abre outra pagina Ex: target="blanck" abrir pagina em branco> --> 
+/**                         **** Notas ***
+ *         
+                        
+*   Execute a function populateUFs(){
+*   carregado o no console f12 o evento.target e exibido o campo Utilizado.
+*   o no console f12 evento.target  carregado tambem o valor ex: piaui 22
+*   de    console.log(event.target.value) para       const ufValue = event.target.value
+ * 
+ * 
+*/
+
+//            <!-- target abre outra pagina Ex: target="blanck" abrir pagina em branco> -->
 
 
     
