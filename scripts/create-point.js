@@ -59,51 +59,55 @@ document
     .addEventListener("change", getCities)  
 
             // itens de coleta all li
+const itensToCollect = document.querySelectorAll(".itens-grid li")
 
-  const itemsToCollect = document.querySelectorAll('.items-grid li')
-   for (const item of itensToCollect){
-     item.addEventListener("click",handleSelectedItem)
-    }
-
-    const collectedItems = document.querySelector("input[name=items]")
-    let selectedItems = []
-
-   function handleSelectedItem(event){
-    // console.log(event.target)
-       const itemLi = event.target
-       itemLi.classList.toggle("selected")
-       const itemId = eventLi.dataset.id
-   }
-
-
-// Verificar se existem itens selecionados, se sim 
-// pegar os itens selecionados
-
-const alreadySelected = selectedItems.findIndex(item => {
-    const itemFound = item == itemId // isso será true ou false
-    return itemFound
-})
-
-        // Se já estiver Selecionado
-if (alreadySelected >= 0) {
-    //tirar da seleção
-    const filredItems = selectedItems.filter(item => {
-        const itemIsDifferent = item != itemId      // false
-        return itemIsDifferent
-    })
-
-    selectedItems = filteredItems
-
-    } else {
-        // se não estiver selecionado
-        // adcionar á seleção
-        selectedItems.push(itemId)
+for (const item of itensToCollect) {
+    item.addEventListener("click", handleSelectedItem)
 }
 
-        // Atualizar o campo escondido com os itens selecionados
-        collectedItems.value = selectedItems
+ //campo escondido com os itens selecionados
 
+const collectedItens = document.querySelector("input[name=itens]")
 
+let selectedItens = [1,2,3,4,5,6]
+
+function handleSelectedItem(event) {
+
+    // console.log(event.target)    Selecionando os itens
+    const itemLi = event.target
+
+        //  toggle adicionar ou remover
+    itemLi.classList.toggle("selected")
+
+    const itemId = eventLi.dataset.id
+
+    // Verificar se existem itens selecionados, se sim 
+    // pegar os itens selecionados
+
+    const alreadySelected = selectedItens.findIndex(item => {
+        const itemFound = item == itemId;   //isso será true ou false
+        return itemFound
+    })
+
+    //Se já estiver selecionado
+    if (alreadySelected >= 0) {
+        //tirar da seleção
+        const filteredItens = selectedItens.filter(item => {
+            const itensIsDifferent = item != itemId     //false
+            return itensIsDifferent
+        })
+
+        selectedItens = filteredItens
+
+    } else {
+        //se não estiver selecionado
+        //adicionar a seleção
+        selectedItens.push(itemId)
+    }
+
+    //atualizar o campo escondido com os itens selecionados
+    collectedItens.value = selectedItens
+}
 
 /**                         **** Notas ***
  *         
@@ -158,5 +162,3 @@ if (alreadySelected >= 0) {
        *///    .then(res => { res.json() }) | COMPLICADA
 
        ///          ufSelect.innerHTML = ufSelect.innerHTML + `<option value="1">Valor</option>`
-
-
