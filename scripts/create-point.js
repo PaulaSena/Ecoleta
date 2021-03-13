@@ -60,7 +60,7 @@ document
 
             // itens de coleta all li
 
-  const itemsToCollect = document.querySelectorAll('.items-grid li')
+  const itensToCollect = document.querySelectorAll('.items-grid li')
    for (const item of itensToCollect){
      item.addEventListener("click",handleSelectedItem)
     }
