@@ -10,6 +10,8 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
   - Html5  <br>
   - Css3 <br>
   - JavaScript <br>
+  - API IBGE <BR>
+  - Json<BR>
 
 ## Na pagina principal Home:
 
@@ -26,5 +28,5 @@ Pagina inicial:[https://paulasena.github.io/Ecoleta/]
 
 ![segunda tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.1.png "dados api IBGE json")
 
--Corrigindo visualização de dados com Json na api IBGE
+-Busca de dados com Json na api IBGE.
 
