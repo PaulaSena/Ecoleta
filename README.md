@@ -25,8 +25,8 @@ Pagina inicial:[https://paulasena.github.io/Ecoleta/]
 
 ![Segunda tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.0.png "cadastro1")
 
+-Busca de dados com Json na api IBGE.
 
 ![segunda tela](https://raw.githubusercontent.com/PaulaSena/Ecoleta/master/imgportfolio/Eco2.1.png "dados api IBGE json")
 
--Busca de dados com Json na api IBGE.
 
