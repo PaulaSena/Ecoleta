@@ -15,7 +15,7 @@
 
     transition: 400ms;
 
-   }
+  }
 
 #modal.hide{
     display:none; /*desabilita a visualização da classe hide no index =D*/
@@ -53,16 +53,24 @@
     }
 
     #modal form label{
+<<<<<<< HEAD
         margin:0;
+=======
+>>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
         font-size:14px;
         line-height:16px;
 
        /**/ display:block;
+<<<<<<< HEAD
         margin-bottom:9px;
+=======
+        margin-bottom:0;
+>>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
     }
 
     #modal form .field{
         display:flex;
+<<<<<<< HEAD
 
     }
 
@@ -77,18 +85,43 @@
         padding: 16px 24px;
         font-size: 18px;
         color: #0094ff;
+=======
+    }
+
+
+    #modal form input{
+        flex:1;
+        background-color:#f0f0f5;
+
+        border-radius:8px 0 0 8px;
+        border:0;
+
+        padding:16px 24px;
+        font-size:18px;
+        color:#0094ff;
+
+>>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
     }
 
     #modal form button {
         width: 70px;
         height: 70px;
         background-color: var(--primary-color);
+<<<<<<< HEAD
 
         /**/border:0;
+=======
+        
+        border:0;
+        
+>>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
         border-radius: 0 8px 8px 0;
     }
 
         #modal form button:hover {
             background-color: #2fb85e;
         }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
