@@ -13,7 +13,7 @@ forms -    box-sizing: border-box;
 */
 
 * {
-    margin: auto 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }

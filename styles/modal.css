@@ -1,13 +1,13 @@
-
 /*campo pesquisa */
-#modal {
-    background-color: #0E0A14eF;
 
-    height: 100vw;
+#modal {
+    background-color: #0E0A14ef;
+
+    height: 100vh;
     width: 100vw;
 
     position: fixed;
-    top:0;
+    top: 0;
 
     display: flex;
     justify-content: center;
@@ -15,113 +15,85 @@
 
     transition: 400ms;
 
-  }
-
-#modal.hide{
-    display:none; /*desabilita a visualização da classe hide no index =D*/
 }
 
-#modal .content{
-    color:azure;
-
-    width:420px;
+#modal.hide {
+    display: none;/*desabilita a visualização da classe hide no index =D/*/
 }
 
-#modal .header{
+#modal .content {
+    color: azure;
+
+    width: 420px;
+}
+
+#modal .header {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-
-    margin-bottom:48px;
+    margin-top: 60%;
+    margin-bottom: 48px;
 }
 
-    #modal .header a {
-        background-image: url("../icones/x.svg");
+#modal .header a {
+    cursor: pointer;
+    background-image: url("../icones/x.svg");
 
-        width: 20px;
-        height: 20px;
+    width: 20px;
+    height: 20px;
 
-        display: flex;
-       
-        font-size: 0.01px;
-    }
+    display: flex;
 
-    #modal .header h1 {
-        /*color: white;*/
-        font-size: 36px;
-        line-height: 42px;
-    }
+    font-size: 0.01px;
+}
 
-    #modal form label{
-<<<<<<< HEAD
-        margin:0;
-=======
->>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
-        font-size:14px;
-        line-height:16px;
+#modal .header h1 {
+   /* color: white;*/
 
-       /**/ display:block;
-<<<<<<< HEAD
-        margin-bottom:9px;
-=======
-        margin-bottom:0;
->>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
-    }
+    font-size: 36px;
+    line-height: 42px;
 
-    #modal form .field{
-        display:flex;
-<<<<<<< HEAD
+}
 
-    }
+#modal form label {
+    font-size: 14px;
+    line-height: 16px;
 
+    display: block;
+    margin-bottom: 8px;
+}
 
-    #modal form input {
-        width: 70px;
-        height: 70px;
-        flex: 1;
-        background-color: #f0f0f5;
-        border-radius: 8px 0 0 8px;
-       /**/ border: 0;
-        padding: 16px 24px;
-        font-size: 18px;
-        color: #0094ff;
-=======
-    }
+#modal form .field {
+    display: flex;
+}
 
+#modal form input {
+    /**/   width: 70px;
+    /**/   height: 70px;
+    flex: 1;
 
-    #modal form input{
-        flex:1;
-        background-color:#f0f0f5;
+    background-color: #f0f0f5;
 
-        border-radius:8px 0 0 8px;
-        border:0;
+    border-radius: 8px 0 0 8px;
+     border: 0;
 
-        padding:16px 24px;
-        font-size:18px;
-        color:#0094ff;
+    padding: 16px 24px;
 
->>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
-    }
+    font-size: 16px;
+    color: #6c6c80;
+}
 
-    #modal form button {
-        width: 70px;
-        height: 70px;
-        background-color: var(--primary-color);
-<<<<<<< HEAD
+#modal form button {
+    width: 70px;
+    height: 70px;
 
-        /**/border:0;
-=======
-        
-        border:0;
-        
->>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
-        border-radius: 0 8px 8px 0;
-    }
-
-        #modal form button:hover {
-            background-color: #2fb85e;
-        }
-<<<<<<< HEAD
+    background-color: #34cb79;
+    border: 0;
     
-=======
->>>>>>> 8dfdd4a172c6e6f796318ab74318ec1231b98e6e
+
+    border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover {
+    background-color: #2fb85e;
+}
