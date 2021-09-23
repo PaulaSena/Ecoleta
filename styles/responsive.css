@@ -108,21 +108,70 @@ transform é mais suave que o transition
     }
  
  /**/
-@media (max-width:360px){
+@media (max-width:450px){
     #page-home header a {
         position: absolute;
-        bottom: 20px;
+        bottom: 25px;
+        
      }
+
+     #page-create-point form {
+        padding: 14px;
+        min-width: 288px;
+      }
+      #page-create-point form h1 {
+        font-size: 28px;
+        }
+
+        #page-create-point form h2 {
+            font-size: 20px;
+            margin-top: 14px;
+            }
+
+        #page-create-point form fieldset {
+                margin-top: 30px;
+            }
+      #page-create-point form .field-group {
+        margin-top: 30px;
+         display: grid; 
+      }
+
+      #page-create-point form .field-group .field + .field {
+        margin-left: 0px;
+    }
+    #page-create-point form button {
+        width: 260px;
+        height: 56px;
+        padding: auto;
+    }
 
      #modal .header a {
         cursor: pointer;
         background-image: url(../icones/x.svg);
-        width: 22px;
-        height: 22px;
+      
     }
+
+    #page-create-point header a span {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        margin-left: 20px;
+        align-items: center;
+    }
+    .itens-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+   
+
         @media (max-height:568) {
             #page-home header main h2 p a {
-                margin-top: 600px;
+                margin-top: 500px;
             }
         }
+
+      
         /**/
