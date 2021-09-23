@@ -108,14 +108,15 @@ transform é mais suave que o transition
     }
  
  /**/
-@media (max-width:450px){
+@media (max-width:550px){
     #page-home header a {
         position: absolute;
-        bottom: 25px;
+        bottom: 40px;
         
      }
 
      #page-create-point form {
+         margin: 15px;
         padding: 14px;
         min-width: 288px;
       }
