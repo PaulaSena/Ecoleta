@@ -7,9 +7,17 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
 
  Para realização desse projeto foi utilizado:
 
-  - Html5  <br>
-  - Css3 <br>
-  - JavaScript <br>
+  FrontEnd:
+  - Html5  
+  - Css3 
+  - JavaScript 
+  - Json
+  - API IBGE
+
+  BackEnd:
+  - Nodejs Express Json
+  - Banco de dados SQL
+  - SQlite
 
 
 ## Na pagina principal Home:
