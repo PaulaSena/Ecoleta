@@ -23,17 +23,41 @@
         transform: translateX(-50%);
         transition-duration: 500ms;
     }
-        #page-home header a main h2 {
-            font-size: 25px;
-        }    
     
+    #page-home main{
+        align-items:center;
+    }
 
-    /* inserindo gradiente =) e uma propriedade do transition 
+        #page-home main h2 {
+            font-size: 25px;
+            /* border-top: 20px; */
+        }
+
+
+    #page-search-results .cards{
+        grid-template-columns:1fr;
+     }
+   
+    #page-search-results .cards img {
+        width: 100%;
+        height: 300px;
+
+    }
+        #page-home header a main h2 {
+        font-size: 25px;
+    }
+
+    #page-home header a span {
+        width: 28px;
+        height: 28px;
+     
+    }
+        /* inserindo gradiente =) e uma propriedade do transition 
 transform é mais suave que o transition
 */
 
 
-    #page-home header a:hover{
+        #page-home header a:hover{
         width: 340px;
         height: 60px;
 
@@ -54,6 +78,9 @@ transform é mais suave que o transition
     #page-home main {
         align-items: center;
         }
+
+    #modal form input {
+        /*width: 70px; Pesquisa ponto coleta*/ width: auto;
     }
         
    
@@ -80,20 +107,22 @@ transform é mais suave que o transition
 
     }
  
-/*
+ /**/
 @media (max-width:360px){
-     #page-home header main h2 {
-        font-size: 15px;
+    #page-home header a {
+        position: absolute;
+        bottom: 20px;
+     }
+
+     #modal .header a {
+        cursor: pointer;
+        background-image: url(../icones/x.svg);
+        width: 22px;
+        height: 22px;
     }
-    #page-home header main h2 p {
-        font-size: 25px;
-    }    
-
-}
-@media (max-height:600){
-    #page-home header main h2 p a{
-    margin-top: 600px;    
-    }    
-
-    } 
-*/
+        @media (max-height:568) {
+            #page-home header main h2 p a {
+                margin-top: 600px;
+            }
+        }
+        /**/
