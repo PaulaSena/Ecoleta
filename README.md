@@ -10,6 +10,7 @@ Next Level Week - Desenvolvimento de uma aplicação para a Semana do Meio Ambie
   - Html5  <br>
   - Css3 <br>
   - JavaScript <br>
+  - API IBGE
 
 ## Na pagina principal Home:
 
