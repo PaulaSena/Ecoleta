@@ -1,0 +1,84 @@
+
+Para usar o servidor***
+instalar o npm
+
+npm init -y
+
+criado o arqvo Json..
+
+--------------------
+{
+  "name": "ecoleta",
+  "version": "1.0.0",
+  "description": "[https://paulasena.github.io/Ecoleta/]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "PaulaSena",
+  "license": "ISC"
+}
+--------------------
+Instalar o express para criar os modulos
+npm install express
+
+//ligar o servidor
+node serverjs 
+http://localhost:3000/      == Cannot GET /
+
+trocar em Json de test para start
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+// Criado Atalhooo para rodar apenas "npm start" ao inves de "node serverjs" 
+
+  "scripts": {
+    "start": "node src/server.js"
+  },
+----- Terminal ---
+  $ npm start
+
+> ecoleta@1.0.0 start
+> node src/server.js 
+
+----
+Configurar rotas e intalar o reestart do servidor com o nodemon
+
+npm install nodemon --save-dev
+npm install nodemon -D
+
+----- ALTERANDO O SCRIPT DO Json DE 
+  "scripts": {
+    "start": "node src/server.js"
+  },
+ -- PARA
+     "start": "nodemon src/server.js"
+
+--reestart
+> ecoleta@1.0.0 start
+> nodemon src/server.js
+
+[nodemon] 3.1.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node src/server.js`
+
+
+----- ENVIE UM ARQUIVO sendFile
+    res.send("cheguei aqui")
+res.sendFile(__dirname + "/src/views/index.html");
+
+//Configurar pasta publica para localizar pela url as pastas
+server.use(express.static("public")) 
+
+dessa forma não é necessario colocar public antes
+http://localhost:3000/styles/main.css
+
+
+//Configurar pasta publica
+server.use(express.static("public"))
+
+server.use(express.static("assets"))
