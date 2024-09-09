@@ -1,0 +1,8 @@
+
+utilizado para renderizar versoes anteriores do html 
+//utilizando template engine
+const nunjucks = require("nunjucks") 
+nunjucks.configure("src/views",{
+    express: server,
+    noCache:true // sem cache em quanto estou programando para evitar erros
+})
